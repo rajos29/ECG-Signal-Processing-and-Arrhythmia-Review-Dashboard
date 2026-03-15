@@ -313,8 +313,6 @@ This supports error analysis and debugging of the pipeline.
     │   ├── figures
     │   └── metrics
     │
-    ├── notebooks
-    │
     ├── requirements.txt
     │
     └── README.md
