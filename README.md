@@ -344,7 +344,7 @@ The dashboard also allows inspection of misclassified beats, enabling qualitativ
 
 ### Typical technology stack:
 
-Python libraries:
+#### Python libraries:
 
 NumPy
 
@@ -358,17 +358,17 @@ Scikit-learn
 
 PyTorch or TensorFlow
 
-Visualization and dashboard:
+#### Visualization and dashboard:
 
 Plotly
 
 Dash or Streamlit
 
-Signal processing:
+#### Signal processing:
 
 SciPy signal processing tools
 
-Expected Outcomes
+#### Expected Outcomes
 
 By the end of the project the repository should contain:
 
