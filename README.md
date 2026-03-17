@@ -244,7 +244,7 @@ Displays individual beat segments centered on the R-peak.
 
 Used to examine waveform morphology.
 
-Feature Summary Panel
+### Feature Summary Panel
 
 Displays computed signal features such as:
 
