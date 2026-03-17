@@ -100,7 +100,7 @@ The system is framed as research and engineering analysis software, not as a cli
 
 The ECG processing pipeline includes several stages commonly used in electrophysiology signal analysis.
 
-### Baseline Wander Removal
+### Baseline Wander Removal:
 
 Low-frequency drift caused by respiration or electrode motion is removed using a high-pass filter.
 
@@ -122,7 +122,7 @@ high-frequency muscle noise
 
 low-frequency baseline drift
 
-### R-Peak Detection
+### R-Peak Detection:
 
 Cardiac R-peaks are detected using an algorithm inspired by the Pan–Tompkins method, which identifies the QRS complex in ECG signals.
 
@@ -130,7 +130,7 @@ Cardiac R-peaks are detected using an algorithm inspired by the Pan–Tompkins m
 
 timestamps of detected R-peaks
 
-### Beat Segmentation
+### Beat Segmentation:
 
 Individual beats are extracted by windowing around detected R-peaks.
 
@@ -140,7 +140,7 @@ Individual beats are extracted by windowing around detected R-peaks.
 
 These segments are used for feature extraction and model input.
 
-### RR Interval Extraction
+### RR Interval Extraction:
 
 RR intervals are computed from successive R-peak locations:
 
@@ -148,11 +148,11 @@ RRₙ = Rₙ₊₁ − Rₙ
 
 These intervals form the basis of heart rate and heart rate variability metrics.
 
-## Feature Extraction
+## Feature Extraction:
 
 The pipeline computes physiological features from each beat and surrounding signal.
 
-### Time-Domain Features
+### Time-Domain Features:
 
 RR interval
 
@@ -216,7 +216,7 @@ A central design goal of the project is to make the dashboard a first-class comp
 
 The dashboard provides an interface for reviewing ECG signals, signal processing steps, and model predictions.
 
-### Key Dashboard Panels
+### Key Dashboard Panels:
 Signal Explorer
 
 Displays the full ECG waveform with zoom and pan capabilities.
@@ -239,13 +239,13 @@ Detected R-peaks are overlaid on the ECG waveform.
 
 This allows verification of peak detection accuracy and identification of abnormal beats.
 
-### Beat Viewer
+### Beat Viewer:
 
 Displays individual beat segments centered on the R-peak.
 
 Used to examine waveform morphology.
 
-### Feature Summary Panel
+### Feature Summary Panel:
 
 Displays computed signal features such as:
 
@@ -255,7 +255,7 @@ RR statistics
 
 HRV metrics
 
-### Model Prediction Panel
+### Model Prediction Panel:
 
 Displays model outputs for each beat:
 
@@ -369,7 +369,7 @@ Dash or Streamlit
 
 SciPy signal processing tools
 
-#### Expected Outcomes
+#### Expected Outcomes:
 
 By the end of the project the repository should contain:
 
