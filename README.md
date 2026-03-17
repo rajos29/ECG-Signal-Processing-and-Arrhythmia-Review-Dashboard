@@ -52,7 +52,7 @@ The result is a research and engineering tool for exploring ECG signal behavior 
 
 The project uses the MIT-BIH Arrhythmia Database, a classic benchmark dataset for ECG analysis.
 
-Dataset characteristics:
+### Dataset characteristics:
 
 48 ECG recordings
 
@@ -64,7 +64,7 @@ two ECG leads per record
 
 beat-level annotations provided by cardiologists
 
-Annotations identify beat types such as:
+### Annotations identify beat types such as:
 
 Normal beats (N)
 
@@ -80,7 +80,7 @@ Data ingestion is handled using the wfdb library.
 
 ## Project Objectives
 
-The project focuses on building a reproducible ECG analysis workflow that includes:
+### The project focuses on building a reproducible ECG analysis workflow that includes:
 
 biomedical signal preprocessing
 
@@ -112,11 +112,11 @@ Low-frequency drift caused by respiration or electrode motion is removed using a
 
 A bandpass filter isolates the physiologically relevant ECG frequency range.
 
-Typical ECG band:
+### Typical ECG band:
 
 0.5–40 Hz
 
-This step suppresses:
+### This step suppresses:
 
 high-frequency muscle noise
 
@@ -134,7 +134,7 @@ timestamps of detected R-peaks
 
 Individual beats are extracted by windowing around detected R-peaks.
 
-Typical beat window:
+### Typical beat window:
 
 -200 ms to +400 ms around the R-peak
 
@@ -178,15 +178,15 @@ These features support both exploratory analysis and machine learning classifica
 
 The machine learning component performs beat-level arrhythmia classification.
 
-Two possible classification settings:
+### Two possible classification settings:
 
-### Binary classification:
+#### Binary classification:
 
 Normal vs Abnormal beats
 
 or
 
-### Multi-class classification:
+#### Multi-class classification:
 
 Normal
 
@@ -267,7 +267,7 @@ prediction probability
 
 ## Abnormal Beat Navigator
 
-Allows navigation to:
+### Allows navigation to:
 
 abnormal beats
 
