@@ -1,4 +1,5 @@
 # ECG Signal Processing and Arrhythmia Review Dashboard
+
 ## Overview
 
 This project implements an end-to-end electrocardiogram (ECG) signal processing and arrhythmia analysis pipeline with an interactive review dashboard. The system ingests raw ECG recordings, applies biomedical signal preprocessing, detects cardiac events, extracts physiological features, and visualizes arrhythmia predictions within a unified dashboard interface.
@@ -103,7 +104,7 @@ The ECG processing pipeline includes several stages commonly used in electrophys
 
 Low-frequency drift caused by respiration or electrode motion is removed using a high-pass filter.
 
-Typical cutoff frequency:
+### Typical cutoff frequency:
 
 0.5 Hz
 
